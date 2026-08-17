@@ -100,6 +100,15 @@
   .cv-caption { font-size: 0.64rem; color: var(--muted); margin-top: 0.7rem; line-height: 1.5; }
   .cv-caption em { color: var(--accent); font-style: normal; font-weight: 600; }
 
+  /* Typographic visual (case 03 — no photo asset) */
+  .call-vis { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 0.85rem;
+    padding: 0 0 2.1rem; margin-top: 1.2rem; }
+  .call-old { font-size: 0.98rem; color: var(--muted); line-height: 1.5; word-break: keep-all;
+    text-decoration: line-through; text-decoration-color: rgba(0,0,0,0.18); }
+  .call-arrow { font-size: 1rem; color: var(--accent); font-weight: 700; }
+  .call-new { font-size: 2rem; font-weight: 700; color: var(--accent); letter-spacing: -0.03em; line-height: 1.2; }
+  .call-note { font-size: 0.68rem; color: var(--muted); line-height: 1.55; margin-top: 0.5rem; word-break: keep-all; }
+
   /* ---- BACK ---- */
   .card-back {
     opacity: 0; pointer-events: none;
@@ -341,7 +350,7 @@
         <li>온보딩 아키텍처 재설계로 랜딩 기간 최대 1년 → 3개월, 연간 교육 인원 99명 → 209명(2.1배) · 3개월 내 소프트랜딩 97%</li>
         <li>AI를 무기로 온보딩 웹앱 직접 개발 · Premiere Pro 독학으로 직무 교육 영상 12편 제작 · 298p 브랜드 매뉴얼북 단독 집필</li>
         <li>교육생 600명 이상 직접 훈련·평가 배출 · 美 커피 평가 기관 ACE 국제 센서리 교육 조교·통역 2회 참여</li>
-        <li>호칭 '님' 단일화 변화관리 · 사내 소식지 웹 구축 후 팀 이관 — 제도와 채널을 함께 설계</li>
+        <li>호칭 '님' 단일화 변화관리 4년 — 선후배 체계를 전 현장 '님'으로 전환, 신입이 먼저 질문하는 조직으로 · 사내 소식지 웹 구축 후 팀 이관</li>
         <li>단국대학교(죽전) 섬유공학 전공 · 첫 커리어는 해외 발주·품질검수·통관을 전 과정 영어로 수행한 의류 부자재 실무</li>
       </ul>
     </div>
@@ -351,8 +360,8 @@
         <div class="p-desc">현상이 아닌 본질을 파고듭니다. 모든 가정에 물음표를 던져, 원래 그래왔다는 구조부터 다시 봅니다.</div>
       </div>
       <div class="pillar">
-        <div class="p-name">Zero-to-One Execution</div>
-        <div class="p-desc">매뉴얼이 없으면 씁니다. 툴이 없으면 직접 만듭니다. 기획을 직접 실행으로 연결합니다.</div>
+        <div class="p-name">Change Management</div>
+        <div class="p-desc">제도는 공지로 시작되지만, 문화는 누군가 먼저 그렇게 사는 걸 보여줄 때 시작됩니다. 그 첫 번째 사람이 되는 쪽을 택합니다.</div>
       </div>
       <div class="pillar">
         <div class="p-name">Scale by Enabling</div>
@@ -444,7 +453,7 @@
     <!-- CASE 03 -->
     <div class="case-card" id="card-03" data-rv>
       <div class="card-face card-front">
-        <span class="card-tag">Culture &amp; Alignment</span>
+        <span class="card-tag">Culture Documentation</span>
         <h3 class="card-title">우리다운 것이<br>흐려지기 전에</h3>
         <button class="btn-tog btn-front" onclick="tog('03')" aria-label="케이스 열기">⊕</button>
         <div class="card-photo"><img src="images/culture1.jpg" alt="전사 통합 브랜드 매뉴얼북"></div>
@@ -453,19 +462,27 @@
         <h3 class="cb-title">우리다운 것이 흐려지기 전에</h3>
         <p class="cb-open">문화가 말로만 전해지면 전설처럼 변형됩니다. 전사에 '우리다운 것'이 무엇인지 정의조차 없었습니다.</p>
         <ul class="cb-acts">
-          <li><strong>브랜드 매뉴얼북 단독 기획·집필 (0→1)</strong> — 브랜드의 가치와 조직 문화, 점포 매뉴얼, 각 부서가 공유하고 싶은 내용까지 298p 한 권에 담아 약 1년간 주도적으로 만들었습니다. 흔들리지 않아야 할 기준을 종이에 고정한 것입니다.</li>
-          <li><strong>호칭 '님' 단일화 변화관리</strong> — 경영진의 메시지를 현장의 언어로 옮기고, 온보딩 커리큘럼 전반에 내재화했습니다.</li>
+          <li><strong>브랜드 매뉴얼북 단독 기획·집필 (0→1)</strong> — 브랜드의 가치와 조직 문화, 점포 매뉴얼, 각 부서가 공유하고 싶은 내용까지 <strong>298p 한 권</strong>에 담아 약 1년간 주도적으로 만들었습니다. 흔들리지 않아야 할 기준을 종이에 고정한 것입니다.</li>
+          <li><strong>미디어 기반 직무 교육 체계 (0→1)</strong> — 책자보다 폰이 익숙한 동료들에게 "더 열심히 읽으세요"라고 요구하는 대신, 손이 자주 가야 하는 직무 파트는 과감히 간략화하고 Premiere Pro를 독학해 <strong>직무 교육 영상 12편</strong>을 기획·촬영·편집해 QR로 연결했습니다. 기준은 종이에, 소비는 폰에.</li>
+          <li><strong>장비가 없으면 찾아냈습니다</strong> — 사양 문제로 아무도 시작하지 않을 때, 사무실에 방치된 아이맥의 구입 이력을 추적해 사용 허가를 받고 시작했습니다. 이를 인정받아 2026년 전사 시무식 영상도 전담했습니다.</li>
+          <li><strong>사내 커뮤니케이션 채널 구축</strong> — 웹 기반 사내 소식지를 단독 제작한 뒤 팀에 이관해, 제가 없어도 굴러가는 채널로 남겼습니다.</li>
         </ul>
         <div class="cb-imgs strip">
           <div class="cb-img-box"><img src="images/manualbook_strip.jpg" alt="브랜드 매뉴얼북 내지 — 브랜드 히스토리, 철학, 영상 매뉴얼, 실무 가이드, 주문 시스템"></div>
         </div>
-        <p class="cb-cap">직접 기획·집필한 298p 브랜드 매뉴얼북 내지 — 브랜드 히스토리·철학부터 영상 매뉴얼·실무 가이드까지 (QR은 사내 자료라 가림)</p>
+        <p class="cb-cap">298p 브랜드 매뉴얼북 내지 — 브랜드 히스토리·철학부터 영상 매뉴얼·실무 가이드까지 (QR은 사내 자료라 가림)</p>
+        <div class="cb-imgs">
+          <div class="cb-img-box"><video src="images/systems1.mp4" poster="images/systems1.jpg" autoplay muted loop playsinline aria-label="직무 교육 영상 클립"></video></div>
+          <div class="cb-img-box crop-low"><img src="images/culture2.jpg" alt="웹 기반 사내 소식지"></div>
+        </div>
+        <p class="cb-cap">독학으로 제작한 직무 교육 영상 (좌) / HTML·CSS로 구축한 사내 소식지 (우)</p>
         <div class="cb-result">
           <div class="cb-nums">
             <div><div class="cn-num">298p</div><div class="cn-lbl">브랜드 매뉴얼북<br>단독 기획·집필</div></div>
+            <div><div class="cn-num">12편</div><div class="cn-lbl">직무 교육 영상<br>기획·촬영·편집</div></div>
             <div><div class="cn-num">0→1</div><div class="cn-lbl">전사 가치·문화<br>최초 문서화</div></div>
           </div>
-          <p class="cb-rtext">이제 신규 입사자는 입사 첫날 이 책을 읽는 시간으로 회사 생활을 시작합니다. 부서 간 소통에서도 <strong>"매뉴얼북 4-5에 따르면"</strong>이라는 화법이 자리 잡았어요. 의견이 갈릴 때 돌아갈 기준점이 생긴 것입니다.</p>
+          <p class="cb-rtext">이제 신규 입사자는 입사 첫날 이 책을 읽는 시간으로 회사 생활을 시작합니다. 부서 간 소통에서도 <strong>"매뉴얼북 4-5에 따르면"</strong>이라는 화법이 자리 잡았어요. QR로 연결된 영상들은 <strong>랜딩을 1년에서 3개월로 줄이고도 품질을 지킬 수 있게 한 안전장치</strong>가 됐습니다. 문화를 문서로 만드는 일은 박제가 아니라 번역이라고 생각합니다.</p>
         </div>
       </div>
       <button class="btn-tog" onclick="tog('03')" aria-label="케이스 닫기">×</button>
@@ -474,31 +491,34 @@
     <!-- CASE 04 -->
     <div class="case-card" id="card-04" data-rv>
       <div class="card-face card-front">
-        <span class="card-tag">L&amp;D System</span>
-        <h3 class="card-title">안 읽히는 매뉴얼은<br>영상으로 옮겼어요</h3>
+        <span class="card-tag">Change Management</span>
+        <h3 class="card-title">선배님이<br>세미님이 되기까지</h3>
         <button class="btn-tog btn-front" onclick="tog('04')" aria-label="케이스 열기">⊕</button>
-        <div class="card-photo"><img src="images/systems_title.jpg" alt="직무 교육 영상 타이틀"></div>
+        <div class="call-vis">
+          <div class="call-old">"2019년 3월 입사자<br>박세미입니다"</div>
+          <div class="call-arrow">↓</div>
+          <div class="call-new">"세미님"</div>
+          <p class="call-note">한 달 차이로 선배와 후배가 갈리던 호칭을, 4년에 걸쳐 전 현장 '님'으로</p>
+        </div>
       </div>
       <div class="card-face card-back">
-        <h3 class="cb-title">안 읽히는 매뉴얼은 영상으로 옮겼어요</h3>
-        <p class="cb-open">책자보다 폰이 익숙한 동료들에게 "책을 더 열심히 읽으세요"라고 요구하는 대신, 소비되는 형태를 바꿨습니다.</p>
+        <h3 class="cb-title">선배님이 세미님이 되기까지</h3>
+        <p class="cb-open">인사팀은 공지 채널로 "이제 '님'으로 부르자"고 알렸습니다. 그리고 아무 일도 일어나지 않았어요.</p>
         <ul class="cb-acts">
-          <li><strong>미디어 기반 직무 교육 체계 (0→1)</strong> — 손이 자주 가야 하는 직무 파트는 과감히 간략화한 대신 Premiere Pro를 독학해 <strong>직무 교육 영상 12편</strong>을 기획·촬영·편집하고 QR로 연결했습니다. 기준은 종이에, 소비는 폰에.</li>
-          <li><strong>장비가 없으면 찾아냈습니다</strong> — 사양 문제로 아무도 시작하지 않을 때, 사무실에 방치된 아이맥의 구입 이력을 추적해 사용 허가를 받고 시작했습니다. 이를 인정받아 2026년 전사 시무식 영상도 전담했습니다.</li>
-          <li><strong>사내 커뮤니케이션 채널 구축</strong> — 웹 기반 사내 소식지를 단독 제작한 뒤 팀에 이관해, 제가 없어도 굴러가는 채널로 남겼습니다.</li>
-          <li><strong>순환형 학습 구조 정착</strong> — 현장 피드백을 실시간으로 수렴해 즉각 업데이트하는 애자일 콘텐츠 운영 구조를 만들었습니다.</li>
+          <li><strong>왜 아무도 안 따랐나</strong> — "선배님"이라 높여 부르던 사람을 어떻게 "님"으로 낮춰 부르나요.
+            <strong>낮춰 불리게 되는 쪽이 먼저 괜찮다는 걸 보여주지 않으면</strong> 누구도 시작할 수 없는 구조였습니다.
+            인사팀이 제도를 만들었다면, 현장의 사람을 직접 만나는 건 교육팀의 일이었어요.</li>
+          <li><strong>제가 먼저 '세미님'이 됐습니다</strong> — 도제식 문화에서 커피를 가르치는 사람은 동경의 대상입니다.
+            가장 높여 불릴 자리의 사람이 먼저 내려오면 나머지가 따라올 수 있다고 봤어요.
+            교육 자리에서 "선배님"도 "선생님"도 아닌 <strong>"세미님이라고 불러 주세요"</strong>라고 소개했습니다.</li>
+          <li><strong>새로 들어오는 물부터 바꿨습니다</strong> — 1~2년 차 비율이 유독 높은 업계라, 굳어진 사람을 설득하는 대신
+            매달 합류하는 신규 입사자가 첫날부터 '님'을 쓰게 했어요. 온보딩이 그 입구였고, 저는 그 입구를 쥐고 있었습니다.</li>
+          <li><strong>리더들 사이에는 '분위기'를 만들었습니다</strong> — 저보다 선배인 리더를 먼저 "OO님"이라 부르고,
+            친분 있는 리더부터 바뀐 호칭을 쓰는 모습을 보여 주자 다른 리더들이 "저게 지금 우리 분위기인가?" 하고 느끼기 시작했어요.
+            <strong>규칙으로 강제하는 대신, 이미 그렇게 되어 가는 것처럼 보이게</strong> 만든 것입니다.</li>
         </ul>
-        <div class="cb-imgs">
-          <div class="cb-img-box"><video src="images/systems1.mp4" poster="images/systems1.jpg" autoplay muted loop playsinline aria-label="직무 교육 영상 클립"></video></div>
-          <div class="cb-img-box crop-low"><img src="images/culture2.jpg" alt="웹 기반 사내 소식지"></div>
-        </div>
-        <p class="cb-cap">독학으로 제작한 직무 교육 영상 (좌) / HTML·CSS로 구축한 사내 소식지 (우)</p>
         <div class="cb-result">
-          <div class="cb-nums">
-            <div><div class="cn-num">12편</div><div class="cn-lbl">직무 교육 영상<br>기획·촬영·편집</div></div>
-            <div><div class="cn-num">1년</div><div class="cn-lbl">기획부터 발간까지<br>주도적 진행</div></div>
-          </div>
-          <p class="cb-rtext">QR로 연결된 영상들은 <strong>랜딩을 1년에서 3개월로 줄이고도 품질을 지킬 수 있게 한 안전장치</strong>가 됐습니다. 문화를 문서로 만드는 일은 박제가 아니라 번역이라고 생각합니다.</p>
+          <p class="cb-rtext">진짜 성과는 호칭이 아니었습니다. <strong>신입들이 훨씬 쉽게 동료에게 다가가 질문하고 도움을 구합니다.</strong> 2~3년 차는 "선배"라는 부담에 짓눌리지 않고 새로 온 사람을 후배가 아니라 함께 뛰는 동료로 느끼고요. 대부분은 현장을 돌 때 먼저 다가와 "이렇게 바뀌어서 감사하다"고 말해 준 사람들에게서 알게 됐습니다. <strong>제도는 공지로 시작되지만, 문화는 누군가 먼저 그렇게 사는 걸 보여줄 때 시작됩니다.</strong></p>
         </div>
       </div>
       <button class="btn-tog" onclick="tog('04')" aria-label="케이스 닫기">×</button>
